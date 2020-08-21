@@ -148,3 +148,62 @@ footer li {
     display: flex;
     justify-content: flex-end;
 }
+
+@media screen and (max-width: 375px) {
+
+    body {
+        background-image: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        margin: 30px 40px 20px;
+    }
+
+    .title-container img {
+        height: 30px;
+    }
+
+    .title-container {
+        margin-bottom: 50px;
+    }
+
+    .grid-container {
+        grid-template-areas: 'image-container'
+                             'text-content';
+        grid-template-columns: 100%;
+        grid-template-rows: 250px 1fr;
+    }
+
+    .content-title {
+        font-size: 18px;
+        text-align-last: center;
+    }
+
+    .text-content {
+        margin-left: auto;
+    }
+
+    .text-content p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .register-button {
+        justify-content: center;
+        margin: auto;
+        margin-top: 25px;
+        height: 35px;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+
+    .social-media ul {
+        padding: auto;
+        padding-left: 0;
+        margin: 50px auto;
+    }
+
+    .register-button p {
+        font-size: 12px;
+    }
+}
